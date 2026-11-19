@@ -1,0 +1,48 @@
+{
+  "name": "bangla-calendar-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the Bangladesh Bengali calendar, national days, districts and mobile numbers.",
+  "type": "module",
+  "bin": {
+    "bangla-calendar-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "start": "node dist/server.js",
+    "eval": "tsx eval/run.ts",
+    "prepare": "tsc -p tsconfig.build.json"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "bangla",
+    "bengali-calendar",
+    "bangladesh"
+  ],
+  "author": "Mohammad Foysal Ahammed",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^1.10.0",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FAsami/bangla-calendar-mcp.git"
+  },
+  "homepage": "https://github.com/FAsami/bangla-calendar-mcp#readme"
+}
